@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Les formulaires HTML: input</title>
+        <meta charset= "utf-8">		
+    </head>
+	<body >
+		<h1>Les formulaires HTML: input</h1>
+		<form method="post" action="traitement.php">
+			<label for="texte">Saisie mono-ligne:</label><input type="text" id="texte">  
+			<br/><br/>
+			<label for="motpass">Mot de passe:</label><input type="password" id="motpass"> 
+			<br/><br/>
+			<label for="dat">Date:</label><input type="date" id="dat" value="2020-05-28"> 
+			
+			<br/><br/>
+			<label for="adr">Adresse email:</label><input type="email" id="adr">
+			<br/><br/>
+			<label for="adr_url">URL:</label><input type="url" id="adr_url" Placeholder="http://"> 
+			<br/><br/>
+			<label for="nombre">Nombres:</label><input type="number" id="nombre" value="0" step="8" min="0" max="64"> 
+			<br/><br/>
+			Bouton radio:<br/>
+						<input type="radio" id="radio1" name="bradio" value="radio1"><label for="radio1">contenu radio 1</label><br/>
+						<input type="radio" id="radio2" name="bradio" value="radio2"><label for="radio2">contenu radio 2</label>			         
+			<br/><br/>
+			Case à cocher:<br/>
+						 <input type="checkbox" id="check1" name="check" value="checkbox1"><label for="check1">contenu checkbox 1</label><br/>
+						 <input type="checkbox" id="check2" name="check" value="checkbox2"><label for="check2">contenu checkbox 2</label>
+			<br/><br/>
+			<label for="tele">Numéro de Tel:</label><input type="tel" id="tele"> 
+			<br/><br/>
+			<label for="temps">Heure et minutes:</label><input type="time" id ="temps">
+			<br/><br/>
+			<label for="dattemp">Date et heure:</label><input type="datetime-local" id="dattemp"> <!-- Sans fuseau horaire --><!-- min="2020-03-02T00:00" max="2020-03-08T00:00"  -->
+			<br/><br/>
+			<label for="semai">Semaine dans une année:</label><input type="week" id="semai"> <!-- min="2020-W18" max="2020-W26" -->
+			<br/><br/>
+			<label for="interv">Nombre dans intervalle:</label><input type="range" id="interv" value="15" max="50" min="0" step="5"> <!-- value="15" max="50" min="0" step="5" -->
+
+			<br/><br/>
+			<label for="couleur">Couleur:</label><input type="color" id="couleur">
+			<br/><br/>			
+			<input type="submit" value="Envoyer"> 
+			<input type="reset" value="Réinitialiser">
+		</form>
+	</body>
+</html>
+
+
+
